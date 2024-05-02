@@ -1,10 +1,9 @@
 package javau9.ca.db.abc.finalprojectalternativehf.Repository;
 
-import javau9.ca.db.abc.finalprojectalternativehf.Models.SimpleUser;
+import javau9.ca.db.abc.finalprojectalternativehf.Models.Product;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface SimpleUserRepository extends JpaRepository<SimpleUser, Long> {
-
+public interface ProductRepository extends JpaRepository<Product, Long> {
 }

@@ -22,6 +22,10 @@ public class Subscription {
         this.startDate = startDate;
     }
 
+    public Subscription() {
+
+    }
+
     public Long getId() {
         return id;
     }

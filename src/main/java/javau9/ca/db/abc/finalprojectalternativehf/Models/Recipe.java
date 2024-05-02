@@ -2,6 +2,7 @@ package javau9.ca.db.abc.finalprojectalternativehf.Models;
 
 import jakarta.persistence.*;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -21,10 +22,23 @@ public class Recipe {
     private List<Product> products;
 
 
-    public Recipe(Long id, String description, String name) {
-        this.id = id;
+    public void addProduct(Product product) {
+        if (this.products == null) {
+            this.products = new ArrayList<>();
+        }
+        this.products.add(product);
+    }
+
+
+    public Recipe() {
+
+    }
+
+
+    public Recipe(String description, String name) {
         this.description = description;
         this.name = name;
+        this.products = new ArrayList<>();
     }
 
     public Long getId() {

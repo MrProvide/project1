@@ -25,6 +25,10 @@ public class Product {
     @OneToMany(mappedBy = "product", cascade = CascadeType.ALL)
     private List<Favorite> favorites;
 
+    public Product() {
+
+    }
+
     public Product(String name, String description, String category) {
         this.name = name;
         this.description = description;
