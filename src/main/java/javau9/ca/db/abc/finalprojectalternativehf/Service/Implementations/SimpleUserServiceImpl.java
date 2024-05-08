@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class SimpleUserServiceImpl implements SimpleUserService {
@@ -59,5 +60,17 @@ public class SimpleUserServiceImpl implements SimpleUserService {
         return false;
 
     }
+
+    @Override
+    public void save(SimpleUser user) {
+
+    }
+
+    @Override
+    public Optional<Object> findbyEmail(String email) {
+        return Optional.empty();
+    }
+
+
 }
 
