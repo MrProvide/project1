@@ -67,7 +67,13 @@ public class SimpleUserServiceImpl implements SimpleUserService {
     }
 
     @Override
-    public Optional<Object> findbyEmail(String email) {
+    public Optional<SimpleUser> findbyEmail(String email) {
+        return Optional.empty();
+    }
+
+
+    @Override
+    public Optional<SimpleUser> findByUsername(String username) {
         return Optional.empty();
     }
 

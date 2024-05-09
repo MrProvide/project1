@@ -20,7 +20,9 @@ public interface SimpleUserService {
 
     void save(SimpleUser user);
 
-    Optional<Object> findbyEmail(String email);
+    Optional<SimpleUser> findbyEmail(String email);
+
+    Optional<SimpleUser> findByUsername(String username);
 }
 
 
